@@ -52,17 +52,6 @@ wheels = [
 ]
 
 [[package]]
-name = "asyncio-mqtt"
-version = "0.16.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "paho-mqtt" },
-]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2a/64/c8a8c2ed51f3c1f4b8d2f244424d3bad3fbd4333eb01589c6b00a6dd2c04/asyncio_mqtt-0.16.2-py3-none-any.whl", hash = "sha256:fe70ea2c648b248779a7ff3d9218262cdd739083743dfaa7c0d52ba458a8ad71", size = 17380, upload-time = "2023-06-26T19:46:48.342Z" },
-]
-
-[[package]]
 name = "attrs"
 version = "25.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -687,15 +676,6 @@ wheels = [
 ]
 
 [[package]]
-name = "paho-mqtt"
-version = "2.1.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/39/15/0a6214e76d4d32e7f663b109cf71fb22561c2be0f701d67f93950cd40542/paho_mqtt-2.1.0.tar.gz", hash = "sha256:12d6e7511d4137555a3f6ea167ae846af2c7357b10bc6fa4f7c3968fc1723834", size = 148848, upload-time = "2024-04-29T19:52:55.591Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c4/cb/00451c3cf31790287768bb12c6bec834f5d292eaf3022afc88e14b8afc94/paho_mqtt-2.1.0-py3-none-any.whl", hash = "sha256:6db9ba9b34ed5bc6b6e3812718c7e06e2fd7444540df2455d2c51bd58808feee", size = 67219, upload-time = "2024-04-29T19:52:48.345Z" },
-]
-
-[[package]]
 name = "patchright"
 version = "1.52.5"
 source = { registry = "https://pypi.org/simple" }
@@ -900,15 +880,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/95/03/1fd98d5841cd7964a27d729ccf2199602fe05eb7a405c1462eb7277945ed/pyee-13.0.0.tar.gz", hash = "sha256:b391e3c5a434d1f5118a25615001dbc8f669cf410ab67d04c4d4e07c55481c37", size = 31250, upload-time = "2025-03-17T18:53:15.955Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9b/4d/b9add7c84060d4c1906abe9a7e5359f2a60f7a9a4f67268b2766673427d8/pyee-13.0.0-py3-none-any.whl", hash = "sha256:48195a3cddb3b1515ce0695ed76036b5ccc2ef3a9f963ff9f77aec0139845498", size = 15730, upload-time = "2025-03-17T18:53:14.532Z" },
-]
-
-[[package]]
-name = "pygments"
-version = "2.19.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz", hash = "sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887", size = 4968631, upload-time = "2025-06-21T13:39:12.283Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl", hash = "sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b", size = 1225217, upload-time = "2025-06-21T13:39:07.939Z" },
 ]
 
 [[package]]
@@ -3589,19 +3560,6 @@ wheels = [
 ]
 
 [[package]]
-name = "rich"
-version = "14.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "markdown-it-py" },
-    { name = "pygments" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/75/af448d8e52bf1d8fa6a9d089ca6c07ff4453d86c65c145d0a300bb073b9b/rich-14.1.0.tar.gz", hash = "sha256:e497a48b844b0320d45007cdebfeaeed8db2a4f4bcf49f15e455cfc4af11eaa8", size = 224441, upload-time = "2025-07-25T07:32:58.125Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e3/30/3c4d035596d3cf444529e0b2953ad0466f6049528a879d27534700580395/rich-14.1.0-py3-none-any.whl", hash = "sha256:536f5f1785986d6dbdea3c75205c473f970777b4a0d6c6dd1b696aa05a3fa04f", size = 243368, upload-time = "2025-07-25T07:32:56.73Z" },
-]
-
-[[package]]
 name = "rpds-py"
 version = "0.26.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3846,18 +3804,14 @@ name = "win-agent"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "aiofiles" },
-    { name = "asyncio-mqtt" },
     { name = "browser-use" },
     { name = "playwright" },
-    { name = "rich" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "aiofiles", specifier = ">=23.2.1" },
-    { name = "asyncio-mqtt", specifier = ">=0.16.1" },
     { name = "browser-use", specifier = ">=0.5.6" },
     { name = "playwright", specifier = ">=1.40.0" },
-    { name = "rich", specifier = ">=13.7.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
 ]
