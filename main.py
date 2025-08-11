@@ -15,7 +15,7 @@ async def main():
     model = os.getenv("MODEL", "glm-4.5")
     
     agent = Agent(
-        task="Compare the price of gpt-4o and DeepSeek-V3",
+        task="有多少个标签页",
         llm=ChatOpenAI(
             model=model,
             temperature=1.0,
